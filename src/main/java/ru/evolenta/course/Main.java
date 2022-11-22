@@ -1,4 +1,4 @@
-package org.example;
+package ru.evolenta.course;
 
 public class Main {
     public static void main(String[] args) {
