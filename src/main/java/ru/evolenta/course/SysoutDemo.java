@@ -16,6 +16,8 @@ public class SysoutDemo {
         System.out.println("abc");
         System.out.println("def");
 
+        System.err.println("error message");
+
         /*
             форматированный вывод
             https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
