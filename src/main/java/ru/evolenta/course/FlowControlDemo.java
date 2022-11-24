@@ -12,6 +12,11 @@ public class FlowControlDemo {
             System.out.println("❌");
         }
 
+        //тернанрный оператор
+        int x = 2;
+        System.out.println(x > 0 ? "positive" : "zero or negative");
+
+
         //цикл while
         boolean key = true;
         while (key) {
