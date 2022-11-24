@@ -40,16 +40,17 @@ public class FlowControlDemo {
 
         //пример использования
         int n = 0;
+        int count = 20;
         do {
             System.out.print("[");
             for (int i = 0; i < n; i++) {
                 System.out.print("=");
             }
-            for (int i = 0; i < 10 - n; i++) {
+            for (int i = 0; i < count - n; i++) {
                 System.out.print(" ");
             }
             System.out.print("]\r");
-            n = n == 10 ? 0 : ++n;
+            n = n == count ? 0 : ++n;
             Thread.sleep(500);
         } while (true);
     }
