@@ -29,6 +29,10 @@ public class FlowControlDemo {
             System.out.printf("a: %s\tb: %s\n", a, b);
         }
 
+        for (char ch : "any text".toCharArray()) {
+            System.out.println(ch);
+        }
+
         String text = "1 2 4 9 9";
         LABEL:
         for (int i = 0; i < text.length(); i++) {
