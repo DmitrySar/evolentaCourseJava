@@ -7,9 +7,9 @@ public class Person {
     private String name;
     private String surname;
     private LocalDate birthday;
-    private String gender;
+    private Gender gender;
 
-    public Person(String lastname, String name, String surname, LocalDate birthday, String gender) {
+    public Person(String lastname, String name, String surname, LocalDate birthday, Gender gender) {
         this.lastname = lastname;
         this.name = name;
         this.surname = surname;
@@ -33,7 +33,7 @@ public class Person {
         return birthday;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
