@@ -18,5 +18,8 @@ public class Main {
                 System.out.println(p);
             }
         }
+
+        Calculator calculator = new Calculator();
+        System.out.println(9 / 7);
     }
 }
