@@ -1,13 +1,15 @@
 package oop;
 
+import java.time.LocalDate;
+
 public class Person {
     private String lastname;
     private String name;
     private String surname;
-    private String birthday;
+    private LocalDate birthday;
     private String gender;
 
-    public Person(String lastname, String name, String surname, String birthday, String gender) {
+    public Person(String lastname, String name, String surname, LocalDate birthday, String gender) {
         this.lastname = lastname;
         this.name = name;
         this.surname = surname;
@@ -27,7 +29,7 @@ public class Person {
         return surname;
     }
 
-    public String getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
