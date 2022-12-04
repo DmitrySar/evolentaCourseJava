@@ -2,19 +2,19 @@ package ru.evolenta.course.collection;
 
 import java.util.Arrays;
 
-public class ArrayDynamic {
+public class ArrayDynamic <T> {
 
     private Object[] elements = new Object[0];
 
-    public Object get(int index) {
-        return elements[index];
+    public T get(int index) {
+        return (T) elements[index];
     }
-    public void add(Object element) {
+    public void add(T element) {
         elements = Arrays.copyOf(elements, elements.length + 1);
         elements[elements.length - 1] = element;
     }
 
-    public Object remove(int index) {
+    public T remove(int index) {
         Object result = null;
         Object[] newArray = new Object[elements.length - 1];
         for (int i = 0, j = 0; i < elements.length; i++, j++) {
@@ -26,7 +26,7 @@ public class ArrayDynamic {
             }
         }
         elements = newArray;
-        return result;
+        return (T) result;
     }
 
     @Override
