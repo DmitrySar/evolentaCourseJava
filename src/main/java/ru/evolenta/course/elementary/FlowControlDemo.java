@@ -1,4 +1,4 @@
-package ru.evolenta.course;
+package ru.evolenta.course.elementary;
 
 import java.util.Random;
 

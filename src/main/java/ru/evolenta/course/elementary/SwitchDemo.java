@@ -1,4 +1,4 @@
-package ru.evolenta.course;
+package ru.evolenta.course.elementary;
 
 public class SwitchDemo {
     public static void main(String[] args) {

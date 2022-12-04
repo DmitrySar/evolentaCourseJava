@@ -1,4 +1,4 @@
-package oop;
+package ru.evolenta.course.oop;
 
 public class Subtract implements Calculator {
     @Override
