@@ -1,0 +1,1 @@
+![модификаторы](https://struchkov.dev/blog/content/images/2022/08/hzv3z-2.png)
