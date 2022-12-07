@@ -1,4 +1,4 @@
-package ru.evolenta.course.collection;
+package ru.evolenta.course.generic;
 
 public class Main {
     public static void main(String[] args) {
