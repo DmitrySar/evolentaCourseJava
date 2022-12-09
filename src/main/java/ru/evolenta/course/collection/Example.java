@@ -52,6 +52,17 @@ public class Example {
         EnumSet<WeekDays> workDays = EnumSet.of(WeekDays.MON, WeekDays.TUE, WeekDays.WED, WeekDays.THU, WeekDays.FRI);
         System.out.println(workDays.contains(WeekDays.SUN));
 
+        //constructor
+        Set<String> reverse = new TreeSet<>(Comparator.reverseOrder());
+        reverse.add("1");
+        reverse.add("33");
+        reverse.add("2");
+        reverse.add("-1");
+        reverse.add("c");
+        reverse.add("b");
+        reverse.add("a");
+        System.out.println(reverse);
+
         //Map //HashMap //TreeMap //get, put //Set<K> keySet //Collection<V> values
         Map<String, ? super Person> personsMap = new HashMap<>();
         personsMap.put("one", new Student("Petrov", "Petr", "Petrovich", LocalDate.of(1998, 03, 07), Gender.MALE));
@@ -84,6 +95,9 @@ public class Example {
         //Для решения проблем с null существуют Optional
         Optional<String> text = Optional.ofNullable(null);
         System.out.println(text.orElse("empty"));
+
+        //utility class Collections
+        System.out.println(Collections.frequency(List.of(2, 3, 2, 10, 2, 1), 2));
     }
 
 }
