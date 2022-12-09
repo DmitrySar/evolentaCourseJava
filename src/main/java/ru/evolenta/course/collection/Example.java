@@ -46,6 +46,7 @@ public class Example {
         numbersSet.add(45);
         numbersSet.add(-23);
         numbersSet.add(99);
+        numbersSet.add(99); //хранит только уникальные элементы
         System.out.println(numbersSet);
 
         EnumSet<WeekDays> workDays = EnumSet.of(WeekDays.MON, WeekDays.TUE, WeekDays.WED, WeekDays.THU, WeekDays.FRI);
@@ -63,7 +64,28 @@ public class Example {
             System.out.printf("%-10s: ", studentEntry.getKey());
             System.out.println(studentEntry.getValue());
         }
+
+        //null
+        Map<Integer, String> map = new HashMap<>();
+        map.put(null, "abc");
+
+        System.out.println(map.get(null));
+        map.put(null, "def");
+        System.out.println(map.get(null));
+
+        map.put(null, null);
+        map.put(1, null);
+        System.out.println(map);
+
+        System.out.println(map.getOrDefault(null, "empty"));
+        System.out.println(map.get(2));
+        System.out.println(map.getOrDefault(2, "empty"));
+
+        //Для решения проблем с null существуют Optional
+        Optional<String> text = Optional.ofNullable(null);
+        System.out.println(text.orElse("empty"));
     }
+
 }
 
 enum WeekDays {
