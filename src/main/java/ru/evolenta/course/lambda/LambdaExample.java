@@ -3,10 +3,7 @@ package ru.evolenta.course.lambda;
 import ru.evolenta.course.oop.Calculator;
 import ru.evolenta.course.oop.Divide;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Example {
+public class LambdaExample {
     public static void main(String[] args) {
         Calculator calculator = new Divide();
         System.out.println(calculator.getResult(2, 3));
@@ -34,12 +31,11 @@ public class Example {
             ссылка на метод экземпляра объекта определенного типа;
             ссылка на конструктор.
          */
-        Calculator c = Example::linkOnMethodDemo;
+        Calculator c = LambdaExample::linkOnMethodDemo;
         System.out.println(c.getResult(2, 3));
 
-
-
-
+        Calculator pow = Math::pow;
+        System.out.println(pow.getResult(2, 3));
     }
 
     private static void lambdaDemo(Calculator calculator, double a, double b) {
