@@ -60,24 +60,24 @@ public class StreamApi {
         /*
             Intermediate operations
 
-            filter returns a new stream that includes the elements that match a predicate;
-            limit returns a new stream that consists of the first n elements of this stream;
-            skip returns a new stream without the first n elements of this stream;
-            distinct returns a new stream consisting of only unique elements according to results of equals;
-            sorted returns a new stream that includes elements sorted according to the natural order or a given comparator;
-            peek returns the same stream of elements but allows observing the current elements of the stream for debugging;
-            map returns a new stream that consists of the elements that were obtained by applying a function (i.e. transforming each element).
+            filter возвращает новый поток, включающий элементы, соответствующие предикату;
+            limit возвращает новый поток, состоящий из первых n элементов этого потока;
+            skip возвращает новый поток без первых n элементов этого потока;
+            distinct возвращает новый поток, состоящий только из уникальных элементов, в соответствии с результатами equals;
+            sorted sorted возвращает новый поток, включающий элементы, отсортированные в соответствии с естественным порядком или заданным компаратором;
+            peek возвращает тот же поток элементов, но позволяет наблюдать за текущими элементами потока для отладки;
+            map возвращает новый поток, состоящий из элементов, которые были получены путем применения функции (т.е. преобразования каждого элемента).
 
             Terminal operations
 
-            count returns the number of elements in the stream as a long value;
-            max / min returns Optional maximum / minimum element of the stream according to the given comparator;
-            reduce combines values from the stream into a single value (an aggregate value);
-            findFirst / findAny returns the first / any element of the stream as an Optional;
-            anyMatch returns true if at least one element matches a predicate (see also: allMatch, noneMatch);
-            forEach takes a consumer and applies it to each element of the stream (for example, printing it);
-            collect returns a collection of the values in the stream;
-            toArray returns an array of the values in a stream.
+            count возвращает количество элементов в потоке в виде длинного значения;
+            max / min возвращает необязательный максимальный /минимальный элемент потока в соответствии с данным компаратором;
+            reduce объединяет значения из потока в одно значение (агрегированное значение);
+            findFirst / findAny возвращает первый / любой элемент потока в качестве необязательного;
+            anyMatch возвращает значение true, если хотя бы один элемент соответствует предикату (см. также: allMatch, noneMatch);
+            forEach принимает потребителя и применяет его к каждому элементу потока (например, печатает его);
+            collect возвращает коллекцию значений в потоке;
+            toArray возвращает массив значений в потоке.
          */
     }
 }
